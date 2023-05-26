@@ -1,17 +1,20 @@
 #include <stdio.h>
 
-extern void genseq(unsigned long long * a);
+extern unsigned long genseq(unsigned long long * a, unsigned long len);
 
-unsigned long long arr[100];
+#define SIZE 100
+unsigned long long arr[SIZE];
 
 int
 main(int argc, char** argv)
 {
+	unsigned long n;
 
 	printf("Integer Sequence\n");
-	genseq(arr);
+	n = genseq(arr, SIZE);
+	printf("returned %ld\n", n);
 
-	for(int i = 0; i < 100; i++) {
+	for(int i = 0; i < n; i++) {
 		printf("%lld\n", arr[i]);
 	}
 	return 0;

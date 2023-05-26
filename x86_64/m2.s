@@ -1,7 +1,8 @@
 .text
 .global genseq
 genseq:
-	movl $0, %eax
-	movl $1, (%rdi)
+	movq $0, %rax
+	movq $1, (%rdi)
+	movq $100, %rax
 	ret
 
