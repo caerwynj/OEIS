@@ -1,0 +1,5 @@
+alias a='./a.out'
+alias c='cat'
+alias ch='cat ../doc/arm64_cheatsheet'
+alias m='cat m1.s'
+alias n='more ~/microHolocron/dict/oeis-names'
